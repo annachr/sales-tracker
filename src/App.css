@@ -7,20 +7,27 @@
   box-sizing: border-box;
   padding: 0;
   margin: 0;
+  font-family: 'IBM Plex Sans', sans-serif;
 }
 
-span {
-  width: 25px;
-  height: 40px;
-  background-color: dodgerblue;
-  margin-right: 3px;
+table {
+  position: relative;
+  /*z-index: -1;*/
+}
+
+tr {
+  height: 10px;
+}
+td {
+  width: 230px;
 }
 
 input {
   width: 60%;
   min-width: 50px;
+  max-height: 50px;
   padding-right: 10px;
-  font-size: 20px;
+  font-size: 18px;
   outline: none;
   border: 1px solid #d6d4d4;
   color: #5AC732;
@@ -28,10 +35,51 @@ input {
   text-align: right;
 }
 
+p {
+  margin-right: 5px;
+  font-size: 10px;
+  text-align: right;
+}
+
+.graphData {
+  display: flex;
+}
+
+.bigTable, .bigRow {
+  border: 1px solid #ededed;
+  border-collapse: collapse;
+}
+
+.smallTable, .smallRow {
+  border-collapse: collapse;
+  width: 8px;
+  border: 1px solid darkgray;
+  border-right: none;
+  border-left: none;
+}
+
+.chart {
+  min-width: 25px;
+  background-color: dodgerblue;
+  margin-right: 3px;
+  position: absolute;
+  bottom: 0;
+  left: 8px;
+  z-index: 1
+}
+
 .graph {
   display: flex;
+  position: relative;
   /*grid-template-columns: repeat(7, 1fr);*/
+}
 
+.scale {
+  margin-right: 4px;
+  display: flex;
+  flex-direction: column;
+  font-size: 10px;
+  color: darkgray;
 }
 
 .App {
@@ -42,7 +90,7 @@ input {
 .sales {
   display: flex;
   flex-direction: column;
-  border-bottom: 2px solid black;
+  border-bottom: 2px solid #d6d4d4;
   font-size: 20px;
 }
 
@@ -78,7 +126,7 @@ input {
 
 }
 
-@media(min-width: 576px) {
+@media(min-width: 768px) {
   .deptInfo {
     grid-template-columns: 3fr 2fr;
   }

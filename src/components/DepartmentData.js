@@ -6,11 +6,10 @@ const DepartmentData = (props) => {
     <div className='deptInfo'>
       <div className='info'>
         <button className='symbolBtn' style={{backgroundColor: props.bgColor}}>{props.symbol}</button>
-        <p>{props.name}</p>
+        <h4>{props.name}</h4>
         <input />
         <button className='addTaskBtn'>+</button>
       </div>
-
       <Graph />
     </div>
   )

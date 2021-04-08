@@ -7,6 +7,7 @@ const SalesSection = () => {
   return (
     <>
       <h1>All Departments Sale Tracker</h1>
+
       <section className='sales'>
         {dept}
       </section>
