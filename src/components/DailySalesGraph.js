@@ -1,62 +1,53 @@
 import React from 'react'
+import DailyGraph from './DailyGraph'
 
 const Graph = () => {
-  function getRandomInt(min, max) {
-    return Math.floor(Math.random() * (max - min)) + min;
-  }
   return (
     <div className='graphData'>
-      <div className='numbers'>
-        <p>100</p>
-        <p>50</p>
-        <p>0</p>
+      <div className='graphNumbers'>
+        <p className='scaleNumber'>100</p>
+        <p className='scaleNumber'>50</p>
+        <p className='scaleNumber'>0</p>
       </div>
-      <div className='scale'>
-        <table className='smallTable'>
-          <tr className='smallRow'>
-            <td> </td>
-          </tr>
-          <tr className='smallRow'>
-            <td> </td>
-          </tr>
-          <tr className='smallRow'>
-            <td> </td>
-          </tr>
-          <tr className='smallRow'>
-            <td> </td>
-          </tr>
+
+      <div className='graphScale'>
+        <table className='scaleTable'>
+          <tbody>
+            <tr className='scaleRow'>
+              <td> </td>
+            </tr>
+            <tr className='scaleRow'>
+              <td> </td>
+            </tr>
+            <tr className='scaleRow'>
+              <td> </td>
+            </tr>
+            <tr className='scaleRow'>
+              <td> </td>
+            </tr>
+          </tbody>
         </table>
-        {/*<p>100 ―</p>*/}
-        {/*<p>―</p>*/}
-        {/*<p>50 ―</p>*/}
-        {/*<p>―</p>*/}
-        {/*<p>0</p>*/}
       </div>
+
       <div className='graph'>
-        <table className='bigTable'>
-          <tr className='bigRow'>
-            <td> </td>
-          </tr>
-          <tr className='bigRow'>
-            <td> </td>
-          </tr>
-          <tr className='bigRow'>
-            <td> </td>
-          </tr>
-          <tr className='bigRow'>
-            <td> </td>
-          </tr>
+        <table className='graphTable'>
+          <tbody>
+            <tr className='graphRow'>
+              <td> </td>
+            </tr>
+            <tr className='graphRow'>
+              <td> </td>
+            </tr>
+            <tr className='graphRow'>
+              <td> </td>
+            </tr>
+            <tr className='graphRow'>
+              <td> </td>
+            </tr>
+          </tbody>
         </table>
-        <div className='spans'>
-          <span className='chart' style={{height: getRandomInt(10, 40)}}> </span>
-          <span className='chart' style={{height: getRandomInt(10, 40)}}> </span>
-          {/*<span style={{height: getRandomInt(10, 40)}}> </span>*/}
-          {/*<span style={{height: getRandomInt(10, 40)}}> </span>*/}
-          {/*<span style={{height: getRandomInt(10, 40)}}> </span>*/}
-          {/*<span style={{height: getRandomInt(10, 40)}}> </span>*/}
-          {/*<span style={{height: getRandomInt(10, 40)}}> </span>*/}
-          {/*<span style={{height: getRandomInt(10, 40)}}> </span>*/}
-        </div>
+
+        <DailyGraph />
 
       </div>
     </div>

@@ -2,12 +2,11 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="933eb4dd-bc8e-4c27-a04c-6f5d87b8714e" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/src/components/DailyGraph.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/public/index.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/App.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/App.css" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/components/DailySalesGraph.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/DailySalesGraph.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/DepartmentData.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/DepartmentData.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/SalesSection.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/SalesSection.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/deptList.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/deptList.js" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -66,7 +65,7 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1617795454622</updated>
-      <workItem from="1617795456427" duration="22845000" />
+      <workItem from="1617795456427" duration="29469000" />
     </task>
     <servers />
   </component>

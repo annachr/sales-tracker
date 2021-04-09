@@ -3,7 +3,7 @@ import DepartmentData from './DepartmentData'
 import deptList from '../deptList'
 
 const SalesSection = () => {
-  const dept = deptList.map(item => <DepartmentData symbol={item.symbol} name={item.name} bgColor={item.bgColor}/>)
+  const dept = deptList.map(item => <DepartmentData key={item.id} symbol={item.symbol} name={item.name} bgColor={item.bgColor}/>)
   return (
     <>
       <h1>All Departments Sale Tracker</h1>
